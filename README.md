@@ -2,7 +2,7 @@
 
 ## Usage
 
-This assignment uses 5 scripts to generate the required plots.  To generate a plot load and run the appropriate script (e.g. `plot1.R`) into your R environment.  Each script calls `getdata.R` to dowload, extract, subset, and load into memory the required data.  If the data has already been downloaded and extracted the script will automatically skip these steps.
+This assignment uses 5 scripts to generate the required plots.  To generate a plot, load and run the appropriate script (e.g. `plot1.R`) into your R environment.  Each script calls `getdata.R` to dowload, extract, subset, and load into memory the required data.  If the data has already been downloaded and extracted the script will automatically skip these steps.
 
 <b>Note:</b> Resulting plots (`plot1.png` - `plot4.png`) are saved to the `figure` directory.  This is the same directory where the reference images are stored.
 
@@ -10,7 +10,7 @@ This assignment uses 5 scripts to generate the required plots.  To generate a pl
 
 ## Requirements
 
-`getdata.R` relies on the `sqldf` library.  An Internet connection is required to download the data.  Esch script should be edited so that the correct local working directory is defined.
+`getdata.R` relies on the `sqldf` library.  An Internet connection is required to download the data.  Each script should be edited so that the correct local working directory is defined.
 
 ## Output
 
