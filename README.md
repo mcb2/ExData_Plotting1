@@ -1,3 +1,44 @@
+# Exploratory Data Analysis Course Project 1
+
+## Usage
+
+This assignment uses 5 scripts to generate the required plots.  To generate a plot load and run the appropriate script (e.g. `plot1.R`) into your R environment.  Each script calls `getdata.R` to dowload, extract, subset, and load into memory the required data.  if the data has already been downloaded and extracted the script will automatically skip these steps.
+<b>Note:<b/> Resulting plots (`plot1.png` - `plot4.png`) are saved to the `figure` directory.  This is the same directory where the reference images are stored.
+
+## Requirements
+
+`getdata.R` relies on the `sqldf` library.  An Internet connection is required to download the data.  Esch script should be edited so that the correct local working directory is defined.
+
+## Output
+
+Below are the plots created by the scripts along with the original reference images from the assignment they are based on.
+
+### Plot 1
+
+![plot1](figure/plot1.png)
+
+### Plot 1 (original reference image)
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+
+
+### Plot 2 (original reference image)
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+
+
+### Plot 3 (original reference image)
+
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+
+
+### Plot 4 (original reference image)
+
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+
+
+
+
 ## Introduction
 
 This assignment uses data from
