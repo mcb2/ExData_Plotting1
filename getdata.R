@@ -3,6 +3,7 @@
 ##
 ## This script requires the sqldf library which should be installed prior to launching it.
 ## The working directory specified below should be modified to reflect you local environment.
+## This script is called by other scripts and should not be called on its own
 
 library(sqldf)
 

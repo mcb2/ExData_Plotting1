@@ -5,7 +5,7 @@
 setwd("~/Coursera/Exploratory Data Analysis/ExData_Plotting1")
 
 source("getdata.R")
-png(filename = "./figure/plot3.png", width = 480, height = 480)
+png(filename = "plot3.png", width = 480, height = 480)
 with(epc, {plot(datetime, Sub_metering_1, type = "l", 
                 ylab = "Energy sub metering", 
                 xlab = "", main = "")
