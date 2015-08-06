@@ -1,4 +1,5 @@
 ## Script to obtain data file and load it into a data frame
+library(sqldf)
 
 ## Change this to an appropriate directory for your environment
 setwd("~/Coursera/Exploratory Data Analysis/ExData_Plotting1")
@@ -17,12 +18,11 @@ if (!file.exists("./data/household_power_consumption.txt")) unzip("./data/househ
 
 # Load, format, and subset data
 if (!file.exists("./data/epc.txt")) {
-     epc <- read.csv2("./data/household_power_consumption.txt", 
-                      na.strings = "?", 
-                      stringsAsFactors = FALSE, 
-                      dec = ".")
+     f <- file("./data/household_power_consumption.txt")
+     q <- "select * from f where Date = '1/2/2007' or Date = '2/2/2007'"
+     epc <- sqldf(q, dbname = tempfile(), file.format = list(header = T, row.names = F, sep = ";"))
+     close(f)
      epc$datetime <- strptime(paste(epc$Date, epc$Time), "%d/%m/%Y %H:%M:%S", tz = "GMT")
-     epc <- epc[epc$datetime >= "2007-02-01" & epc$datetime < "2007-02-03", ]
      write.table(epc, file = "./data/epc.txt", row.name = FALSE, sep = ",")
 } else {
      epc <- read.csv("./data/epc.txt", 
